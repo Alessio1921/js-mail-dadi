@@ -15,3 +15,19 @@ document.getElementById("sent").addEventListener('click', function () {
     document.getElementById("reply").innerHTML=result;
   }
 })
+// dice game
+document.getElementById("play").addEventListener('click', function () {
+  let diceUser= Math.floor(( Math.random ()*6)+ 1);
+  let diceBot= Math.floor(( Math.random ()*6)+ 1);
+  console.log(diceUser);
+  console.log(diceBot);
+  if (diceUser > diceBot){
+    console.log("hai vinto");
+  }
+  else if( diceUser==diceBot){
+    console.log("abbiamo pareggiato");
+  }
+  else{
+    console.log("ha vinto il computer");
+  }
+})
